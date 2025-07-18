@@ -1,0 +1,175 @@
+{
+  "title": "PDF",
+  "outline": [
+    {
+      "level": "H1",
+      "text": "PDF",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "History",
+      "page": 1
+    },
+    {
+      "level": "H2",
+      "text": "Technical details",
+      "page": 2
+    },
+    {
+      "level": "H3",
+      "text": "PostScript language",
+      "page": 2
+    },
+    {
+      "level": "H2",
+      "text": "File format",
+      "page": 3
+    },
+    {
+      "level": "H2",
+      "text": "Imaging model",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "Vector graphics",
+      "page": 5
+    },
+    {
+      "level": "H3",
+      "text": "Raster images",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "Text",
+      "page": 6
+    },
+    {
+      "level": "H3",
+      "text": "Transparency",
+      "page": 7
+    },
+    {
+      "level": "H2",
+      "text": "Additional features",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "Logical structure and accessibility",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "Optional Content Groups (layers)",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "Encryption and signatures",
+      "page": 8
+    },
+    {
+      "level": "H3",
+      "text": "File attachments",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "Metadata",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "Accessibility",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "Multimedia",
+      "page": 10
+    },
+    {
+      "level": "H3",
+      "text": "Forms",
+      "page": 11
+    },
+    {
+      "level": "H2",
+      "text": "Licensing",
+      "page": 12
+    },
+    {
+      "level": "H2",
+      "text": "Security",
+      "page": 12
+    },
+    {
+      "level": "H3",
+      "text": "Changes to content",
+      "page": 12
+    },
+    {
+      "level": "H3",
+      "text": "Malware vulnerability",
+      "page": 12
+    },
+    {
+      "level": "H2",
+      "text": "Software",
+      "page": 13
+    },
+    {
+      "level": "H3",
+      "text": "Viewers and editors",
+      "page": 13
+    },
+    {
+      "level": "H3",
+      "text": "Printing",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "Native display model",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "Annotation",
+      "page": 14
+    },
+    {
+      "level": "H3",
+      "text": "Conversion and Information Extraction",
+      "page": 15
+    },
+    {
+      "level": "H2",
+      "text": "Alternatives",
+      "page": 15
+    },
+    {
+      "level": "H2",
+      "text": "See also",
+      "page": 15
+    },
+    {
+      "level": "H2",
+      "text": "References",
+      "page": 15
+    },
+    {
+      "level": "H2",
+      "text": "Further reading",
+      "page": 25
+    },
+    {
+      "level": "H2",
+      "text": "External links",
+      "page": 26
+    }
+  ]
+}
