@@ -1,7 +1,25 @@
+
 import os
 import json
 import fitz  # PyMuPDF
+import unicodedata
 from collections import defaultdict
+from langdetect import detect, DetectorFactory
+
+DetectorFactory.seed = 0  # ensure reproducibility
+
+def is_heading_candidate(text):
+    if len(text) < 2:
+        return False
+    letters = sum(1 for c in text if unicodedata.category(c).startswith("L"))
+    return letters > 0
+
+def detect_language(sample_texts):
+    sample = " ".join(sample_texts[:20])
+    try:
+        return detect(sample)
+    except:
+        return "unknown"
 
 def process_pdf(filepath):
     doc = fitz.open(filepath)
@@ -16,7 +34,7 @@ def process_pdf(filepath):
             for l in b["lines"]:
                 for s in l["spans"]:
                     text = s["text"].strip()
-                    if len(text) < 3 or not text[0].isalpha():
+                    if not is_heading_candidate(text):
                         continue
                     size = round(s["size"], 1)
                     fonts[size] += 1
@@ -27,7 +45,7 @@ def process_pdf(filepath):
                     })
 
     if not fonts:
-        return json.dumps({"title": "Untitled", "outline": []}, indent=2)
+        return json.dumps({"title": "Untitled", "outline": [], "language": "unknown"}, indent=2)
 
     sizes_sorted = sorted(fonts.items(), key=lambda x: (-x[0], -x[1]))
     level_map = {}
@@ -46,7 +64,13 @@ def process_pdf(filepath):
         for h in headings if h["size"] in level_map
     ]
 
-    return json.dumps({"title": title, "outline": outline}, indent=2)
+    language = detect_language([h["text"] for h in headings])
+
+    return json.dumps({
+        "title": title,
+        "outline": outline,
+        "language": language
+    }, indent=2)
 
 def main():
     input_dir = "/app/input"
