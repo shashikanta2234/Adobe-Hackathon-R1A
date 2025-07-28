@@ -108,5 +108,5 @@ These are automatically installed inside the Docker container.
 
 ## 👨‍💻 Author
 
-Developed by SK for Adobe India Hackathon 2025  
+Developed by hack_coders for Adobe India Hackathon 2025  
 Engineering Student | AI & Document Intelligence Enthusiast
